@@ -22,6 +22,11 @@ Se decidio organizar la aplicacion en paquetes respecto a la responsabilidad de 
 - Model: Entidades relacionas fuertemente al problema a resolver.
 - Configuration: mera configuracion de SpringBoot
 
+### Libreria externas
+
+A parte de las librerias necesarias de spring boot, se agrego la libreria [trilateration](https://github.com/lemmingapex/trilateration), que nos permite calcular, utilizando posiciones y distancias, una posicion por triangulacion.
+
+
 ### Testing
 
 Se aprovecho la funcionalidad de SpringBoot para testear la correcta funcionalidad de los objetos. Solo se testeo lo que implica el mantenimiento de estado de la aplicacion o lo que implica logica de negocio importante.
@@ -36,6 +41,10 @@ El enfoque estuvo puesto en realizar la menor cantidad de tests, pero que los mi
 En principio, se intento enfocarse en el principio de responsabilidad unica. De esta manera, el modelo quedaria abierto a extension y con poco acoplamiento.
 
 
+### Live Cloud Test
+Para el test en vivo, se utilizo el beneficio de [AWS Free Tier](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all).
+
+Se creo una instancia con Ubuntu 20 como S.O. La misma tiene la aplicacion corriendo. Con un nginx fowardeando lo del puerto 80 al 8080.
 
 
 
