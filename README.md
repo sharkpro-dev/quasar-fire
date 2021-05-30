@@ -1,3 +1,6 @@
+![example workflow](https://github.com/gonzaloea/quasar-fire/actions/workflows/maven.yml/badge.svg)
+
+
 # quasar-fire
 Herramienta de triangulacion de naves enemigas
 
